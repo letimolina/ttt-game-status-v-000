@@ -9,12 +9,6 @@ def empty_board?(board)
  end
 end
 
-# def full_board?(board)
-#   board.all? do |position|
-#     position != nil || position != "" || position != " "
-#   end
-# end
-
 def draw?(board)
   if full_board?(board) == true
     return true
@@ -59,7 +53,7 @@ end
 def draw?(board)
   if !won?(board) && full?(board)
     true
-  # elsif !won?(board) && !full_board?(board)
+  # elsif !won?(board) && !full?(board)
   end
 end
 
