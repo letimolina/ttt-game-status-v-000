@@ -53,7 +53,7 @@ WIN_COMBINATIONS.detect do |position|
 end
 
 def full?(board)
-  board.all?{|occupied| occupied != " "}
+  board.all?{|i| i == "X" || i == "O"}
 end
  
 def draw?(board)
